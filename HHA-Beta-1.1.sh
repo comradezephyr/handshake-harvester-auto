@@ -114,7 +114,6 @@ capture_handshake() {
     fi
 }
 
-# Run handshake capture for each AP in parallel
 IFS=$'\n'
 for ap in $AP_LIST; do
     BSSID=$(echo "$ap" | cut -d',' -f1)
